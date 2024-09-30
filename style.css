@@ -1,0 +1,178 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+}
+
+header {
+    background-color: #1a1a1a; /* Darker header for distinction */
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #f39c12; /* Golden color for hover effect */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #f39c12; /* Golden hue for headers to create a cinematic glow */
+}
+
+
+article {
+    margin-bottom: 20px;
+    background-color: #1c1c1c; /* Slightly lighter background for article blocks */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Subtle shadow for depth */
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+    border-top: 1px solid #333; /* Small border for footer distinction */
+}
+
+img {
+    border: 2px solid #f39c12; /* Golden border around the image */
+    border-radius: 10px; /* Slight rounding for a polished look */
+}
+
+
+/* Review article layout with Flexbox */
+article {
+    display: flex;
+    justify-content: space-between; /* Space between text and image */
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+article div {
+    flex: 1; /* The text div takes up remaining space */
+}
+
+article p {
+    font-size: 24px; /* Adjust this size as needed */
+}
+
+article img {
+    margin-left: 20px; /* Space between text and image */
+    max-width: 200px; /* Restrict image size */
+    border-radius: 5px;
+    order: 1; /* Ensure the image stays on the right */
+}
+
+/* Gallery style */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 30%; /* Each item takes up 30% of the width, and adjusts responsively */
+    max-width: 300px; /* Ensures images don’t grow too large */
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.caption {
+    color: #fff;
+}
+
+.caption h3 {
+    color: #f39c12;
+    margin-bottom: 5px;
+}
+
+.caption p {
+    font-size: 14px;
+}
+
+/* Style for video gallery */
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.video-item {
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    max-width: 580px; /* Limiting the width for better layout */
+    text-align: center;
+}
+
+.video-item h3 {
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.video-item iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Style for the video section caption */
+.video-section-caption {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.video-section-caption h2 {
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.video-section-caption p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+

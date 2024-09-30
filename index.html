@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Film Review Blog - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add hover effect styles */
+        .container {
+            position: relative;
+            width: 90%; /* Increase the width to make the image larger */
+            max-width: 900px; /* Increase the maximum width */
+            margin: 0 auto; /* Center the container */
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        /* Style the button */
+        
+        .text {
+            background-color: #ead06c;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px; 
+            text-decoration: none; /* Remove underline from the link */
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .text:hover {
+            background-color: #d4ac0d; /* Darken button on hover */
+        }
+    </style>
+</head>
+<body> 
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="talks.html">Discussions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="TIFFcalendar.pdf">Calendar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Reel Reviews, Real Opinions</h1>
+
+        <!-- TIFF Image with Hover Button -->
+        <div class="container">
+            <img src="TIFFsign.jpg" alt="TIFF Sign" class="image">
+            <div class="middle">
+                <!-- Anchor tag to link to reviews.html -->
+                <a href="reviews.html" class="text">Go to Reviews</a>
+            </div>
+        </div>
+    </div>
+
+        <!-- YouTube Videos Section -->
+    <div class="video-section-caption">
+        <h2>Some Captured Moments of the Festival</h2>
+        <p>Check out some Q&A sessions & exclusive highlights from the TIFF festival!</p>
+    </div>
+
+    <div class="video-gallery">
+        <div class="video-item">
+            <h3>SNL Q&A</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yWDmUNIOaHY?si=jw9l9BFjergYoIfh" title="SNL Q&A" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+            <h3>Jason Reitman</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aHFvrmYPKLQ?si=4JA2e73uGDvlF0le" title="Jason Reitman" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+            <h3>The Friend</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xZJOFP8lbcc?si=m_w4awKRUucDOV6h" title="The Friend" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+            <h3>Highlights</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yoBsJnhO2Sk?si=kqdJOHvH9ykZe_dR" title="Highlights" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="container">
+        <h2>Star Ratings</h2>
+        <div class="gallery">
+            <!-- Photo 1 -->
+            <div class="gallery-item">
+                <img src="went_up_hill.jpg" alt="Went Up the Hill">
+                <div class="caption">
+                    <h3>&#9733; &#9733;</h3>
+                </div>
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="gallery-item">
+                <img src="the_cut.jpg" alt="The Cut">
+                <div class="caption">
+                    <h3>&#9733;</h3>
+                </div>
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="gallery-item">
+                <img src="jane.jpg" alt="Jane Austen Wrecked My Life">
+                <div class="caption">
+                    <h3>&#9733; &#9733; &#9733; &#9733;</h3>
+                </div>
+            </div>
+
+            <!-- Photo 4 -->
+            <div class="gallery-item">
+                <img src="time.jpg" alt="We Live In Time">
+                <div class="caption">
+                    <h3>&#9733; &#9733; &#9733; &#9733; 1/2</h3>
+                </div>
+            </div>
+
+            <!-- Photo 5 -->
+            <div class="gallery-item">
+                <img src="sketch.jpg" alt="Sketch">
+                <div class="caption">
+                    <h3>&#9733; &#9733; &#9733; 1/2 </h3>
+                </div>
+            </div>
+
+            <!-- Photo 6 -->
+            <div class="gallery-item">
+                <img src="swift_horses.jpg" alt="On Swift Horses">
+                <div class="caption">
+                    <h3>&#9733; &#9733; &#9733; &#9733;</h3>
+                </div>
+            </div>
+
+            <!-- Photo 7 -->
+            <div class="gallery-item">
+                <img src="friendship.jpg" alt="Friendship">
+                <div class="caption">
+                    <h3>&#9733; &#9733; &#9733; &#9733; 1/2</h3>
+                </div>
+            </div>
+
+            <!-- Photo 8 -->
+            <div class="gallery-item">
+                <img src="queer.jpg" alt="Queer">
+                <div class="caption">
+                    <h3>&#9733; &#9733;</h3>
+                </div>
+            </div>
+
+            <!-- Photo 9 -->
+            <div class="gallery-item">
+                <img src="snl.jpg" alt="SATURDAY NIGHT">
+                <div class="caption">
+                    <h3>&#9733; &#9733; &#9733; &#9733; &#9733;</h3>
+                </div>
+            </div>
+
+            <!-- Photo 10 -->
+            <div class="gallery-item">
+                <img src="friend2.jpg" alt="The Friend">
+                <div class="caption">
+                    <h3>&#9733; &#9733; &#9733; 1/2</h3>
+                </div>
+            </div>
+
+            <!-- Photo 11 -->
+            <div class="gallery-item">
+                <img src="millers.jpeg" alt="Millers In Marriage">
+                <div class="caption">
+                    <h3>&#9733; &#9733; &#9733;</h3>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; TIFF 2024 Film Review </p>
+    </footer>
+</body>
+</html>
